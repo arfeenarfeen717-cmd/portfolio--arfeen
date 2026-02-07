@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arfeen | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#0f0f1a;
+    color:white;
+    scroll-behavior:smooth;
+}
+
+/* HEADER */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#111122;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:700;
+    background:linear-gradient(45deg,#00f5ff,#ff00cc);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+nav a{
+    margin-left:20px;
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00f5ff;
+}
+
+/* HERO */
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:60px 8%;
+    min-height:90vh;
+}
+
+.hero-text h1{
+    font-size:40px;
+    font-weight:700;
+}
+
+.hero-text span{
+    background:linear-gradient(45deg,#00f5ff,#ff00cc);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.hero-text p{
+    margin:20px 0;
+    color:#bbb;
+    font-size:16px;
+}
+
+.resume-btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:linear-gradient(45deg,#00f5ff,#ff00cc);
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.resume-btn:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 20px #00f5ff88;
+}
+
+.profile-photo{
+    width:280px;
+    height:280px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid #00f5ff;
+    box-shadow:0 0 30px #00f5ff55;
+}
+
+/* SECTION */
+section{
+    padding:70px 8%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:28px;
+    font-weight:700;
+    margin-bottom:40px;
+    background:linear-gradient(45deg,#00f5ff,#ff00cc);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+/* SKILLS */
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.skill-card{
+    background:#141428;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    font-weight:600;
+    transition:0.3s;
+    border:1px solid #1f1f2e;
+}
+
+.skill-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 20px #ff00cc55;
+}
+
+/* PROJECTS */
+.projects-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.project-card{
+    background:#141428;
+    padding:30px;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 25px #00f5ff55;
+}
+
+.project-card h3{
+    margin-bottom:15px;
+}
+
+.project-card a{
+    text-decoration:none;
+    color:#00f5ff;
+    font-weight:600;
+}
+
+/* CONTACT */
+.contact{
+    text-align:center;
+}
+
+.contact a{
+    color:#00f5ff;
+    text-decoration:none;
+    display:block;
+    margin:10px 0;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#111122;
+    font-size:14px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .profile-photo{
+        margin-top:30px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Arfeen</div>
+    <nav>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>Hi, I'm <span>Arfeen</span></h1>
+        <p>Computer Science Student | Web Developer | Machine Learning Enthusiast</p>
+
+       
+    </div>
+
+    <img src="images/arfeen.png" alt="Profile" class="profile-photo">
+</section>
+
+<section id="skills">
+    <div class="section-title">Technical Skills</div>
+    <div class="skills-grid">
+        <div class="skill-card">Python</div>
+        <div class="skill-card">Java</div>
+        <div class="skill-card">C Programming</div>
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        
+        <div class="skill-card">MS Excel</div>
+        <div class="skill-card">Communication Skills</div>
+    </div>
+</section>
+
+<section id="projects">
+    <div class="section-title">Projects</div>
+    <div class="projects-grid">
+        <div class="project-card">
+            <h3>Fake News Detection</h3>
+            <a href="https://github.com/ukulsum2402/fake-news-detection-system" target="_blank">
+                View Project →
+            </a>
+        </div>
+
+        <div class="project-card">
+            <h3>Hall Booking System</h3>
+            <a href="https://github.com/ukulsum2402/hall-finder" target="_blank">
+                View Project →
+            </a>
+        </div>
+
+        <div class="project-card">
+            <h3>Student Grade Management</h3>
+            <a href="https://github.com/ukulsum2402/Student-Grade-Management-System----Project1" target="_blank">
+                View Project →
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <div class="section-title">Contact</div>
+    <a href="mailto:arfeenarfeen717@gmail.com">📧 arfeenarfeen717@gmail.com</a>
+    <a href="https://linkedin.com/in/arfeen-yaseen-1403112b7" target="_blank">LinkedIn Profile</a>
+    <a href="https://github.com/arfeenarfeen717-cmd" target="_blank">GitHub Profile</a>
+</section>
+
+<footer>
+    © 2026 Arfeen | Portfolio website
+</footer>
+
+</body>
+</html>
